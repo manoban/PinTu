@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+    <RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.example.jigsaw.GamePintuLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:padding="3dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/id_gamepintu"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/id_gamepintu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第"
+            android:textSize="30sp"/>
+    <TextView
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:padding="4dp"
+        android:id="@+id/id_level"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="1"
+        android:gravity="center"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关  "
+            android:textSize="30sp"/>
+
+        <TextView
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:padding="4dp"
+        android:id="@+id/id_time"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="120"
+        android:background="@drawable/textbg"
+        android:gravity="center"
+        android:layout_alignParentRight="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:text="暂停"
+            android:id="@+id/pause"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="继续"
+            android:background="@android:color/white"
+            android:id="@+id/resume"/>
+
+</LinearLayout>
+
+</RelativeLayout>
